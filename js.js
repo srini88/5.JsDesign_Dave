@@ -5,23 +5,27 @@ window.onload = function(){
 	var myClosure2 = function(){   //encapsulating date and mynestedFun in the myClosure2 container
 		var date  = new Date();
 
-		var myNestedFunc = function(){
+		var myNestedFunc = function(){   //this fn is private..
 			console.log("inside");
 			return date.getMilliseconds();
-		}
+		};
+		//to fix the above private fn
+		return {
+			foo : myNestedFunc    ///the revealing module pattern..to make a way to get to the myNestedFunc
+			///date object is being preserved in memory..
+		};
 	};
-
 
 
 
 	var output = document.getElementById("output");
 
 	var closure = new myClosure2();  ///called above..
-	output.innerHTML = closure.myNestedFunc();  //you get closure.myNestedFunc is not a function
+	output.innerHTML = closure.foo();  //you get closure.myNestedFunc is not a function
 
 
 	window.setTimeout(function(){
-			output.innerHTML += '<br/>' + closure.myNestedFunc();
+			output.innerHTML += '<br/>' + closure.foo();
 		}, 500);   //after 500 sec...we get the same ms written out
 
 
