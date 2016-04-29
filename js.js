@@ -20,7 +20,7 @@ window.onload = function(){
 
 	var output = document.getElementById("output");
 
-	var closure = new myClosure2();  ///called above..
+	var closure = myClosure2();  ///without new..not seeing any difference..
 	output.innerHTML = closure.foo();  //you get closure.myNestedFunc is not a function
 
 
