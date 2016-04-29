@@ -1,5 +1,5 @@
 
-window.onload = function(){
+
 
 	//function exp ..so moved to top..so that this will be called..
 	var myClosure2 = function(){   //encapsulating date and mynestedFun in the myClosure2 container
@@ -44,4 +44,4 @@ window.onload = function(){
 	}
 
 
-}
+///remember I removed window.onload...removing that makes  Cannot set property 'innerHTML' of null  depending upon where this JS file exists in the HTML Doc - very imp
