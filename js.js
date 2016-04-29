@@ -1,14 +1,18 @@
+window.onload = function(){
 
 
-function myClosure(){
+	var output = document.getElementById("output");
+	output.innerHTML = myNonClosure();
 
-	var date = new Date();  //this date variable of the object sticks around..
-	//nested function....this date sticks around..
-	return function(){
+
+	window.setTimeout(function(){
+			output.innerHTML += '<br/>' + myNonClosure();
+		}, 500);   //after 500 sec...creating new date object on every call..to prove
+
+
+
+	function myNonClosure(){
+		var date = new Date();
 		return date.getMilliseconds();
 	}
-} ///this closure allows us to create a container for our variables and our functions..
-
-console.log(myClosure());  //you get a function here..
-
-console.log(myClosure()());  //you get a value here...
+}
