@@ -42,4 +42,22 @@ closure - an inner function always has access to the vars and aprameters of its 
 
 you can nest functions, if you do that- changes the visibility...
 
+////closures provide encapsulation...........
+
+prototype pattern ====
+
+leverage prototyping functionality///
+
+pro --- leverage js built in features, 
+modularize your code nto reusabel objects..
+
+variables/fns taken out of glbal namespace..
+
+functions loaded into memory once..100 objects - share all those 40 funcs in memery......
+
+possible to override functison through prototyping....may be override parts of other library...some dude....
+
+cons -  "uses this" - can be tricky...
+have to deal with two parts...
+Constructor separate from prototype definition...(2 parts - constructor and prototype)
 
