@@ -61,3 +61,37 @@ cons -  "uses this" - can be tricky...
 have to deal with two parts...
 Constructor separate from prototype definition...(2 parts - constructor and prototype)
 
+---------------------------Douglas Crockford ....
+
+
+return 
+{
+
+}
+//the first one is a silent error...bad parts of JS is automatical semicolon insertion...
+
+
+return {
+
+}
+
+JS has function scope not block scope...
+
+//this i will be hoisted to the top of the function..
+for (var i =0 ; )
+
+	let there be let... let does not hoist...
+
+
+var a = b=0;
+
+var a =0, b=0;
+
+
+it will be 
+
+b=0;
+
+var a=b;
+
+implicitly global variables...
