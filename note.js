@@ -95,3 +95,60 @@ b=0;
 var a=b;
 
 implicitly global variables...
+
+-------Numbers in Javascript - Douglas...
+
+one numner type -- 64 bit floating point --- aka Doouble...
+
+no integer types, ...
+
+
+-----NAN 
+
+not a number...result of undefined or erroneous ..typeof NAN - number...
+
+NaN is not equal to anything, including NaN...
+
+Strings are immutable...if you want to change a string , you need to create a new string..you can use single or double quotes..
+
+value from a form is always a astring...
+Number(str)
+
+Array ---- Array inherits from Objects...
+
+The dot notation should not be used with arrays...
+
+sort does it with string when dealing with numbers...
+
+
+delete will leave a hole in the array..so use splice to prevent holes and splice does reordering..
+in js associative array is an object...
+
+typeof null is object..
+typeof array is also object...
+
+Array.isArray
+
+Falsy values -- will yield false..in if conditions..
+
+
+false, null, undefined.... "" , 0 NaN
+
+All other values are truthy..
+ stirng "0" and "false" is truthy...
+
+
+ JS is a Loosely typed..
+
+Objects can be passed as arguments to functions...Objects are passed by reference...the ==== operator compares reference..means same object...
+
+in js blocks do not have any scope
+
+
+
+
+this parameter contains a reference to the object of invocation..
+
+
+
+
