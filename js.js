@@ -1,25 +1,21 @@
-// function reverse(sentence){
-// 	return sentence.split(" ").reverse().join(" ");
+// var digit_name = function (n){
+// 	var names = ['zero', 'one', 'two', 'three'];  //creating an array just to return one thing...will run bit slow..
+
+// 	return names[n];
 // }
 
-
-console.log(reverse("hi my name is"))
-
-//want-  is name my hi
-
-function reverse(sentence){
-	
-	var str ='';
-
-	for (var i=sentence.length-1 ; i >= 0; i--){
-		str+=sentence[i]; 
-	}
-	return str;
-}
+// console.log(digit_name(3));  //you get three...
 
 
+//best way to do is with closure..
 
-var boo = "HI";
-boo[1] = "e";
 
-console.log(boo)  //cannot do in place in javascript
+var digit_name = (function (n){
+	console.log("ni")  //prins this
+	var names = ['zero', 'one', 'two', 'three'];  //creating an array just to return one thing...will run bit slow..
+
+	return names[n];
+	console.log("b")
+})();
+
+//console.log(digit_name(3)); 
